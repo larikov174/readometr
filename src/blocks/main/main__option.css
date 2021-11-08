@@ -1,0 +1,9 @@
+.main__option {
+  display: flex;
+}
+
+@media screen and (max-width: 350px) {
+  .main__option {
+    flex-direction: column;
+  }
+}

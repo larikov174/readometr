@@ -1,0 +1,13 @@
+.main__button {
+  font-family: 'IBM Plex Serif', serif, Arial;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.2;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 350px) {
+  .main__button {
+    width: 100%;
+  }
+}

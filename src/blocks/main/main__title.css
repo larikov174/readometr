@@ -1,0 +1,22 @@
+.main__title {
+  align-self: center;
+  font-family: 'IBM Plex Serif', serif, Arial;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.46;
+  margin-left: 28%;
+  padding: 0;
+}
+
+@media screen and (max-width: 750px) {
+  .main__title {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main__title {
+    font-size: 20px;
+  }
+}
