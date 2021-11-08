@@ -6,13 +6,15 @@
 @import url(./blocks/main/main.css);
 @import url(./blocks/main/main__action.css);
 @import url(./blocks/main/main__button.css);
+@import url(./blocks/main/main__button_idle.css);
 @import url(./blocks/main/main__count.css);
 @import url(./blocks/main/main__list.css);
 @import url(./blocks/main/main__option.css);
 @import url(./blocks/main/main__select.css);
-@import url(./blocks/main/main__select_caption.css);
 @import url(./blocks/main/main__text.css);
 @import url(./blocks/main/main__title.css);
 @import url(./blocks/main/main_counter.css);
+@import url(./blocks/main/main__select_caption.css);
+@import url(./blocks/book/book__textArea.css);
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/footer__caption.css);
