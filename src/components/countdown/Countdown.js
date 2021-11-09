@@ -13,7 +13,6 @@ export const Countdown = () => {
     if (num < 1) {
       navigate("/book");
       clearInterval(intervalRef.current);
-      setNum(3);
     }
 
     return () => clearInterval(intervalRef.current);

@@ -1,15 +1,19 @@
 .footer {
   min-height: 40px;
   padding-top: 20px;
-  margin-top: 20%;
+  margin: 0;
   border-top: 1px solid #000;
-  font-family: 'IBM Plex Serif', serif, Arial;
+  font-family: "IBM Plex Serif", serif, Arial;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.2;
+  position: fixed;
+  bottom: 10px;
+  width: 95%;
+  max-width: 1024px;
 }
 
-@media screen and (max-width: 370px){
+@media screen and (max-width: 370px) {
   .footer {
     display: flex;
     flex-direction: column;
