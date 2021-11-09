@@ -6,6 +6,7 @@ export const Timer = () => {
   let navigate = useNavigate();
   const [num, setNum] = useState(5);
   const [modalVisibleState, setModalVisibleState] = useState(false);
+  const modalClose = () => setModalVisibleState(false);
   const intervalRef = useRef();
   const decreaseNum = () => setNum((prev) => prev - 1);
   const playSound = (fileName) => {
@@ -13,7 +14,6 @@ export const Timer = () => {
     audio.src = `https://code.s3.yandex.net/web-code/react/${fileName}`;
     audio.play();
   };
-  const modalClose = () => setModalVisibleState(false);
 
   useEffect(() => {
     intervalRef.current = setInterval(decreaseNum, 1000);

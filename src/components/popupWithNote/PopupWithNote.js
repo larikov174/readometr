@@ -1,7 +1,7 @@
 import React from "react";
 
 export const PopupWithNote = ({ isOpen, isClosed, children }) => {
-  console.log(isOpen);
+
   return (
     <>
       <div className={`popup ${isOpen?'popup_opened': ''}`}>
