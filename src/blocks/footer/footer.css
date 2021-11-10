@@ -1,7 +1,9 @@
 .footer {
   min-height: 40px;
-  padding-top: 20px;
-  margin: 0;
+  max-width: 1024px;
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
   border-top: 1px solid #000;
   font-family: "IBM Plex Serif", serif, Arial;
   font-weight: 400;
@@ -9,8 +11,9 @@
   line-height: 1.2;
   position: fixed;
   bottom: 10px;
-  width: 95%;
-  max-width: 1024px;
+  left: 0;
+  right: 0;
+  background-color: #ffff;
 }
 
 @media screen and (max-width: 370px) {

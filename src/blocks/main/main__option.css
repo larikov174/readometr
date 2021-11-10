@@ -1,5 +1,10 @@
 .main__option {
   display: flex;
+  flex-direction: column;
+  max-width: 325px;
+  min-height: 200px;
+  margin: 150px auto;
+  position: relative;
 }
 
 @media screen and (max-width: 350px) {

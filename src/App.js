@@ -1,7 +1,8 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/header/Header";
+import {NavBar} from "./components/navBar/NavBar";
 import { Main } from "./components/main/Main";
 import { Countdown } from "./components/countdown/Countdown";
 import { Book } from "./components/book/Book";
@@ -17,11 +18,7 @@ function App() {
         <Route  path="book" element={<Book />} />
         <Route  path="/*" element={<Main />} />
       </Routes>
-      <nav style={{ margin: 10 }}>
-        <Link to="/" style={{ padding: 5 }}>
-          Home
-        </Link>
-      </nav>
+      <NavBar />
       <Footer />
     </div>
   );
