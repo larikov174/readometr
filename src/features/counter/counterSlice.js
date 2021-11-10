@@ -1,7 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   index: 0,
-  text: 'abc',
   totalWords: 0,
 };
 

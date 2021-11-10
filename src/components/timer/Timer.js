@@ -19,7 +19,6 @@ export const Timer = () => {
     intervalRef.current = setInterval(decreaseNum, 1000);
 
     if (num < 1) {
-      // navigate("/book");
       playSound("gong.mp3");
       setModalVisibleState(true);
       clearInterval(intervalRef.current);

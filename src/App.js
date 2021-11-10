@@ -15,6 +15,7 @@ function App() {
         <Route  path="/" element={<Main />} />
         <Route  path="countdown" element={<Countdown />} />
         <Route  path="book" element={<Book />} />
+        <Route  path="/*" element={<Main />} />
       </Routes>
       <nav style={{ margin: 10 }}>
         <Link to="/" style={{ padding: 5 }}>
