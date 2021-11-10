@@ -1,10 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import switcherReducer from "../features/switcher/switcherSlice";
-import counterReducer from "../features/counter/counterSlice";
+import setDataReducer from "../features/setData/setDataSlice";
 
 export const store = configureStore({
   reducer: {
-    switcher: switcherReducer,
-    counter: counterReducer,
+    setData: setDataReducer,
   },
 });

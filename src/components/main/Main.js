@@ -1,29 +1,36 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { levelChanged } from "../../features/switcher/switcherSlice";
 import { Link } from "react-router-dom";
+import { getInitText } from "../../features/setData/getInitText";
+import { storeText } from "../../features/setData/setDataSlice";
 
 export const Main = () => {
+  const dispatch = useDispatch();
   const [value, setValue] = useState("");
   const onOptionChanged = (e) => setValue(e.target.value);
-  const dispatch = useDispatch();
-  const onButtonClicked = () => value && dispatch(levelChanged(value));
+  const onButtonClicked = () => dispatch(storeText(getInitText(value)));
   const isInteractive = value === "" ? "none" : "all";
 
   return (
     <section className={"main"}>
       <h1 className="main__title">Привет!</h1>
       <p className="main__text">
-        Ты на странице проекта, который помогает быстро подсчитать количество прочитанных слов за 1 минуту.
+        Ты на странице проекта, который помогает быстро подсчитать количество
+        прочитанных слов за 1 минуту.
       </p>
       <p className="main__text">Инструкция по использованию очень простая:</p>
       <ul className="main__list">
         <li className="main__text">Выбери подходящий уровень сложности</li>
-        <li className="main__text">Нажми на кнопку начать и приготовься читать</li>
         <li className="main__text">
-          По истечении одной минуты кликни два раза левой кнопкой мыши по слову где остановился\остановилась.
+          Нажми на кнопку начать и приготовься читать
         </li>
-        <li className="main__text">В диалоговом окне введи своем имя, чтобы сохранить свой результат.</li>
+        <li className="main__text">
+          По истечении одной минуты кликни два раза левой кнопкой мыши по слову
+          где остановился\остановилась.
+        </li>
+        <li className="main__text">
+          В диалоговом окне введи своем имя, чтобы сохранить свой результат.
+        </li>
       </ul>
       <div className="main__option">
         <p className="main__text main__select_caption">Сложность:</p>
@@ -37,10 +44,13 @@ export const Main = () => {
           </option>
         </select>
         <Link
-          className={`main__button ${isInteractive === "none" ? "main__button_idle" : ""}`}
+          className={`main__button ${
+            isInteractive === "none" ? "main__button_idle" : ""
+          }`}
           style={{ pointerEvents: isInteractive }}
           to="countdown"
-          onClick={onButtonClicked}>
+          onClick={onButtonClicked}
+        >
           Начать
         </Link>
       </div>

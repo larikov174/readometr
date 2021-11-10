@@ -1,11 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   index: 0,
-  totalWords: 0,
+  text: 0,
 };
 
-const counterSlice = createSlice({
-  name: "counter",
+const setDataSlice = createSlice({
+  name: "setData",
   initialState,
   reducers: {
     storeIndex: (state, action) => {
@@ -17,6 +17,6 @@ const counterSlice = createSlice({
   },
 });
 
-export const { storeIndex, storeText } = counterSlice.actions;
+export const { storeIndex, storeText } = setDataSlice.actions;
 
-export default counterSlice.reducer;
+export default setDataSlice.reducer;

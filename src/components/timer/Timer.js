@@ -4,7 +4,7 @@ import { useNavigate, Link } from "react-router-dom";
 
 export const Timer = () => {
   let navigate = useNavigate();
-  const [num, setNum] = useState(5);
+  const [num, setNum] = useState(59);
   const [modalVisibleState, setModalVisibleState] = useState(false);
   const modalClose = () => setModalVisibleState(false);
   const intervalRef = useRef();
@@ -45,7 +45,7 @@ export const Timer = () => {
       </section>
       <PopupWithNote isOpen={modalVisibleState} isClosed={modalClose}>
         <h2 className="popup__title">Время истекло.</h2>
-        <p>Выдели слово где ты остановился и нажми кнопку подсчитать</p>
+        <p>Выдели слово где ты остановился и узнай свой результат!</p>
       </PopupWithNote>
     </>
   );
