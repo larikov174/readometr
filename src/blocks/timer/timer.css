@@ -1,6 +1,9 @@
 .timer {
   margin: 0;
   padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 550px) {

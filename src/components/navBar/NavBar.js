@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   return (
-    <div className="navBar">
+    <section className="navBar">
       <Link to="/about" className="button button__navBar">
         О проекте
       </Link>
@@ -16,6 +16,6 @@ export const NavBar = () => {
       <Link to="/feedback" className="button button__navBar">
         Обратная связь
       </Link>
-    </div>
+    </section>
   );
 };
