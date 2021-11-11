@@ -1,11 +1,11 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-export const Guide = () => {
+export const Results = () => {
   const navigate = useNavigate();
   return (
     <section className="guide">
-      <h1 className="about__title">Инструкция по использованию:</h1>
+      <h1 className="about__title">Ваши результаты:</h1>
       <ul className="guide__list">
         <li className="about__text">Укажите свое имя</li>
         <li className="about__text">Выбери подходящий уровень сложности</li>

@@ -1,5 +1,7 @@
 .timer__area {
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 @media screen and (max-width: 350px) {

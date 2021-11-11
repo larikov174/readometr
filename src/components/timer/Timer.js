@@ -31,14 +31,10 @@ export const Timer = () => {
     <>
       <section className={"timer"}>
         <div className="timer__area">
-          <div className="timer__block">
-            таймер&nbsp;
-            <span id="minutes">00</span>:
-          </div>
-          <div className="timer__block">
-            <span id="seconds">{num < 10 ? `0${num}` : num}</span>
-          </div>
-          <Link className={"main__button"} to="/">
+          <p className="timer__block">
+            таймер&nbsp;00:{num < 10 ? `0${num}` : num}
+          </p>
+          <Link className={"button button__navBar"} to="/">
             Назад
           </Link>
         </div>

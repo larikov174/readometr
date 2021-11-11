@@ -33,6 +33,7 @@
 @import url(./blocks/button/button__main.css);
 @import url(./blocks/button/button__navBar.css);
 @import url(./blocks/button/button__about.css);
+@import url(./blocks/button/button__guide.css);
 @import url(./blocks/button/button_idle.css);
 @import url(./blocks/about/about.css);
 @import url(./blocks/about/about__title.css);

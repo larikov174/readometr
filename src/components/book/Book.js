@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import { Timer } from "../timer/Timer";
 import { PopupWithNote } from "../popupWithNote/PopupWithNote";
 import { countWords } from "../countWords/CountWords";
+import { Timer } from "../timer/Timer";
 
 export const Book = () => {
   const [popupOpened, setPopupOpened] = useState(false);
@@ -17,8 +17,8 @@ export const Book = () => {
 
   return (
     <>
-      <Timer />
       <section className={"main"}>
+        <Timer />
         <textarea
           className="book__textArea"
           value={text}
