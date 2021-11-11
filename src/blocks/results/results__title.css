@@ -1,0 +1,13 @@
+.results__title {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.46;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 450px) {
+  .results__title {
+    font-size: 20px;
+  }
+}

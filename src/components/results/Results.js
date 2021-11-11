@@ -4,16 +4,28 @@ import { Link, useNavigate } from "react-router-dom";
 export const Results = () => {
   const navigate = useNavigate();
   return (
-    <section className="guide">
-      <h1 className="about__title">Ваши результаты:</h1>
-      <ul className="guide__list">
-        <li className="about__text">Укажите свое имя</li>
-        <li className="about__text">Выбери подходящий уровень сложности</li>
-        <li className="about__text">
-          По истечении одной минуты выдели слово где остановился(ась).
+    <section className="results">
+      <h1 className="results__title">Ваши результаты:</h1>
+      <ul className="results__list">
+        <li className="results__item">
+          <p className="results__text">date</p>
+          <p className="results__text">name</p>
+          <p className="results__text">quantity</p>
         </li>
-        <li className="about__text">
-          Нажми на кнопку "Узнать результат" в меню наверху страницы.
+        <li className="results__item">
+          <p className="results__text">date</p>
+          <p className="results__text">name</p>
+          <p className="results__text">quantity</p>
+        </li>
+        <li className="results__item">
+          <p className="results__text">date</p>
+          <p className="results__text">name</p>
+          <p className="results__text">quantity</p>
+        </li>
+        <li className="results__item">
+          <p className="results__text">date</p>
+          <p className="results__text">name</p>
+          <p className="results__text">quantity</p>
         </li>
       </ul>
       <div className="guide__actions">
