@@ -1,4 +1,4 @@
-import data from "../../app/data.json";
+import data from "../../app/initTexts.json";
 
 export const getInitText = (userLevel) => {
   const getRandomInt = (max) => Math.floor(Math.random() * max);

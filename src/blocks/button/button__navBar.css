@@ -11,3 +11,10 @@
   text-decoration: solid;
   cursor: pointer;
 }
+
+@media screen and (max-width: 325px) {
+  .button__navBar {
+    font-size: 12px;
+    text-align: center;
+  }
+}

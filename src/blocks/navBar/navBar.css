@@ -1,4 +1,23 @@
 .navBar {
   display: flex;
   justify-content: flex-end;
+  border-bottom: 1px solid grey;
+  box-sizing: border-box;
+  font-family: "IBM Plex Serif", serif, Arial;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 400px) {
+  .navBar  {
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .navBar  {
+    font-size: 12px;
+  }
 }

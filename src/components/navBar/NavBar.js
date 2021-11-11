@@ -7,7 +7,7 @@ export const NavBar = () => {
       <Link to="/about" className="button button__navBar">
         О проекте
       </Link>
-      <Link to="/instruction" className="button button__navBar">
+      <Link to="/guide" className="button button__navBar">
         Инструкция
       </Link>
       <Link to="/feedback" className="button button__navBar">

@@ -44,8 +44,20 @@ export const Timer = () => {
         </div>
       </section>
       <PopupWithNote isOpen={modalVisibleState} isClosed={modalClose}>
-        <h2 className="popup__title">Время истекло.</h2>
-        <p>Выдели слово где ты остановился и узнай свой результат!</p>
+        <section className="guide2">
+          <h1 className="about__title">Время истекло!</h1>
+          <div className="popup__image" alt="Будильник звенит"></div>
+          <h2 className="about__title">А сейчас:</h2>
+          <ul className="guide__list">
+            <li className="about__text">Нажми кнопку далее.</li>
+            <li className="about__text">
+              Выдели слово в тексте, на котором остановлся(ась).
+            </li>
+            <li className="about__text">
+              Нажми на кнопку "Узнать результат" в меню наверху страницы.
+            </li>
+          </ul>
+        </section>
       </PopupWithNote>
     </>
   );

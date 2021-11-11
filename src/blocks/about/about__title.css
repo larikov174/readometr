@@ -1,0 +1,14 @@
+.about__title {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.46;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+  .about__title {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,14 @@
+.about__text {
+  font-family: "IBM Plex Serif", serif, Arial;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 0;
+  padding: 15px 0 0 0;
+}
+
+@media screen and (max-width: 450px) {
+  .about__text {
+    font-size: 12px;
+  }
+}

@@ -5,4 +5,7 @@
   line-height: 1.8;
   overflow: overlay;
   resize: none;
+  padding: 0px 20px;
+  margin: 0;
+  box-sizing: border-box;
 }

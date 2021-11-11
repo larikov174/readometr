@@ -24,7 +24,7 @@ export const PopupWithNote = ({ isOpen, isClosed, children }) => {
               name="submitPopup"
               onClick={isClosed}
             >
-              Закрыть окно
+              Далее...
             </button>
           </div>
         </form>

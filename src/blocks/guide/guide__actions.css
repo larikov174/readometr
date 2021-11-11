@@ -1,0 +1,4 @@
+.guide__actions {
+  display: flex;
+  flex-direction: row;
+}
