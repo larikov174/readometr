@@ -5,10 +5,3 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
-
-@media screen and (max-width: 450px) {
-  .popup__image {
-    width: 129px;
-    height: 49px;
-  }
-}

@@ -31,30 +31,13 @@ export const Timer = () => {
     <>
       <section className={"timer"}>
         <div className="timer__area">
-          <p className="timer__block">
-            таймер&nbsp;00:{num < 10 ? `0${num}` : num}
-          </p>
+          <p className="timer__block">таймер&nbsp;00:{num < 10 ? `0${num}` : num}</p>
           <Link className={"button button__navBar"} to="/">
             Назад
           </Link>
         </div>
       </section>
-      <PopupWithNote isOpen={modalVisibleState} isClosed={modalClose}>
-        <section className="guide2">
-          <h1 className="about__title">Время истекло!</h1>
-          <div className="popup__image" alt="Будильник звенит"></div>
-          <h2 className="about__title">А сейчас:</h2>
-          <ul className="guide__list">
-            <li className="about__text">Нажми кнопку далее.</li>
-            <li className="about__text">
-              Выдели слово в тексте, на котором остановлся(ась).
-            </li>
-            <li className="about__text">
-              Нажми на кнопку "Узнать результат" в меню наверху страницы.
-            </li>
-          </ul>
-        </section>
-      </PopupWithNote>
+      <PopupWithNote isOpen={modalVisibleState} isClosed={modalClose} />
     </>
   );
 };

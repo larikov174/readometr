@@ -3,4 +3,19 @@
   align-self: center;
   position: relative;
   margin: 0 auto;
+  min-height: 540px;
+}
+
+@media screen and (max-width: 450px){
+  .popup__container {
+    min-height: 380px;
+    width: 350px;
+  }
+
+}
+@media screen and (max-width: 390px){
+  .popup__container {
+    min-height: 380px;
+    width: 282px;
+  }
 }
