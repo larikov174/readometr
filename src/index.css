@@ -13,6 +13,7 @@
 @import url(./blocks/main/main__title.css);
 @import url(./blocks/main/main_counter.css);
 @import url(./blocks/main/main__label.css);
+@import url(./blocks/book/book.css);
 @import url(./blocks/book/book__textArea.css);
 @import url(./blocks/timer/timer.css);
 @import url(./blocks/timer/timer__area.css);
@@ -33,6 +34,7 @@
 @import url(./blocks/button/button__about.css);
 @import url(./blocks/button/button__guide.css);
 @import url(./blocks/button/button_idle.css);
+@import url(./blocks/button/button__navBar_idle.css);
 @import url(./blocks/about/about.css);
 @import url(./blocks/about/about__title.css);
 @import url(./blocks/about/about__text.css);

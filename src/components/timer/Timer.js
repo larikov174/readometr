@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 export const Timer = () => {
   const [num, setNum] = useState(59);
   const [modalVisibleState, setModalVisibleState] = useState(false);
+  const [isActive, setIsActive] = useState("");
+  const isInteractive = isActive === "" ? "none" : "all";
   const modalClose = () => setModalVisibleState(false);
   const intervalRef = useRef();
   const decreaseNum = () => setNum((prev) => prev - 1);
@@ -19,6 +21,7 @@ export const Timer = () => {
 
     if (num < 1) {
       playSound("gong.mp3");
+      setIsActive(true);
       setModalVisibleState(true);
       clearInterval(intervalRef.current);
     }
@@ -30,11 +33,19 @@ export const Timer = () => {
     <>
       <section className={"timer"}>
         <div className="timer__area">
-          <p className="timer__block">таймер&nbsp;00:{num < 10 ? `0${num}` : num}</p>
+          <p className="timer__block">
+            таймер&nbsp;00:{num < 10 ? `0${num}` : num}
+          </p>
           <Link className={"button button__navBar"} to="/">
             Назад
           </Link>
-          <Link className={"button button__navBar"} to="/results">
+          <Link
+            className={`button button__navBar ${
+              isInteractive === "none" ? "button__navBar_idle" : ""
+            }`}
+            style={{ pointerEvents: isInteractive }}
+            to="/results"
+          >
             Подсчитать
           </Link>
         </div>

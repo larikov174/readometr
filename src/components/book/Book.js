@@ -11,7 +11,7 @@ export const Book = () => {
   };
 
   return (
-    <section className={"main"}>
+    <section className={"book"}>
       <Timer />
       <textarea
         className="book__textArea"

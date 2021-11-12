@@ -21,10 +21,7 @@ export const Main = () => {
     <section className={"main"}>
       <div className="main__option">
         <nav className="main__nav">
-          <label
-            htmlFor="nameInput"
-            className="main__text"
-          >
+          <label htmlFor="nameInput" className="main__text">
             Введите имя:
           </label>
           <input
@@ -35,10 +32,7 @@ export const Main = () => {
           />
         </nav>
         <nav className="main__nav">
-          <label
-            htmlFor="selectLevel"
-            className="main__text"
-          >
+          <label htmlFor="selectLevel" className="main__text">
             Сложность:
           </label>
           <select
