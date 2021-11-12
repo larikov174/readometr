@@ -1,16 +1,20 @@
 .header__logo {
-  width: 70%;
   height: 100px;
   background-image: url(../../images/logo.png);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
 }
 
+@media screen and (max-width: 650px){
+  .header__logo {
+    height: 70px;
+  }
+}
+
 @media screen and (max-width: 450px){
   .header__logo {
-    width: 129px;
-    height: 49px;
+    height: 50px;
   }
 }
