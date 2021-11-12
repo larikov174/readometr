@@ -3,7 +3,6 @@ const initialState = {
   text: "",
   user: "",
   index: 0,
-  total: 0,
 };
 
 const dataSlice = createSlice({
@@ -19,12 +18,9 @@ const dataSlice = createSlice({
     saveIndex: (state, action) => {
       state.index = action.payload;
     },
-    saveTotal: (state, action) => {
-      state.total = action.payload;
-    },
   },
 });
 
-export const { saveText, saveUser, saveIndex, saveTotal } = dataSlice.actions;
+export const { saveText, saveUser, saveIndex } = dataSlice.actions;
 
 export default dataSlice.reducer;

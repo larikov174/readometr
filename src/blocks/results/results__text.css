@@ -1,11 +1,10 @@
 .results__text {
   font-family: "IBM Plex Serif", serif, Arial;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 36px;
   line-height: 1.4;
   margin: 0;
-  padding: 10px 0 0 0;
-  width: 100%;
+  padding: 0;
 }
 
 .results__text:nth-of-type(2) {

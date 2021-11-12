@@ -1,9 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { PopupWithNote } from "../popupWithNote/PopupWithNote";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const Timer = () => {
-  let navigate = useNavigate();
   const [num, setNum] = useState(59);
   const [modalVisibleState, setModalVisibleState] = useState(false);
   const modalClose = () => setModalVisibleState(false);
@@ -25,7 +24,7 @@ export const Timer = () => {
     }
 
     return () => clearInterval(intervalRef.current);
-  }, [num, navigate]);
+  }, [num]);
 
   return (
     <>

@@ -10,9 +10,6 @@ export const NavBar = () => {
       <Link to="/guide" className="button button__navBar">
         Инструкция
       </Link>
-      <Link to="/results" className="button button__navBar">
-        Результаты
-      </Link>
       <Link to="/feedback" className="button button__navBar">
         Обратная связь
       </Link>

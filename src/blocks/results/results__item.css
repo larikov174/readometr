@@ -1,8 +1,0 @@
-.results__item {
-  display: flex;
-  border-bottom: 1px solid grey;
-}
-
-.results__item:last-child {
-  border: none;
-}
