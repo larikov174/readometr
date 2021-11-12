@@ -35,7 +35,7 @@ export const Timer = () => {
           <Link className={"button button__navBar"} to="/">
             Назад
           </Link>
-          <Link className={"button button__navBar"} to="/">
+          <Link className={"button button__navBar"} to="/results">
             Подсчитать
           </Link>
         </div>

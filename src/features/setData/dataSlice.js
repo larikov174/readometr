@@ -2,6 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   text: "",
   user: "",
+  index: 0,
+  total: 0,
 };
 
 const dataSlice = createSlice({
@@ -14,9 +16,15 @@ const dataSlice = createSlice({
     saveUser: (state, action) => {
       state.user = action.payload;
     },
+    saveIndex: (state, action) => {
+      state.index = action.payload;
+    },
+    saveTotal: (state, action) => {
+      state.total = action.payload;
+    },
   },
 });
 
-export const { saveText, saveUser } = dataSlice.actions;
+export const { saveText, saveUser, saveIndex, saveTotal } = dataSlice.actions;
 
 export default dataSlice.reducer;
