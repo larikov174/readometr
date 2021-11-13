@@ -7,7 +7,7 @@ export const Guide = () => {
     <section className="guide">
       <h1 className="about__title">Инструкция по использованию:</h1>
       <ul className="guide__list">
-        <li className="about__text">Укажите свое имя</li>
+        <li className="about__text">Укажи свое имя</li>
         <li className="about__text">Выбери подходящий уровень сложности</li>
         <li className="about__text">
           По истечении одной минуты выдели последнее прочитанное слово в тексте.
