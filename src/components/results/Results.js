@@ -1,11 +1,18 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useSelector } from "react-redux";
 import { countWords } from "../countWords/CountWords";
 import { Link } from "react-router-dom";
+import applause from "../../sounds/applause.mp3";
 
 export const Results = () => {
   const { text, index, user } = useSelector((state) => state.setData);
   const getTotal = countWords(index, text);
+
+  useEffect(()=>{
+    const audio= new Audio();
+    audio.src = applause;
+    audio.play();
+  })
 
   return (
     <section className="results">
