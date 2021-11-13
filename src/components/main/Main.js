@@ -24,7 +24,7 @@ export const Main = () => {
           <label htmlFor="nameInput" className="main__text">
             Введите имя:
           </label>
-          <input type="text" id="nameInput" className="main__input" placeholder={user} onChange={onInputChanged} />
+          <input type="text" id="nameInput" className="main__input" defaultValue={user} onChange={onInputChanged} maxLength="30"/>
         </nav>
         <nav className="main__nav">
           <label htmlFor="selectLevel" className="main__text">

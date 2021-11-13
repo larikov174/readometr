@@ -10,17 +10,27 @@ export const Timer = () => {
   const modalClose = () => setModalVisibleState(false);
   const intervalRef = useRef();
   const decreaseNum = () => setNum((prev) => prev - 1);
-  const playSound = (fileName) => {
+  const playSound = (filename) => {
     const audio = new Audio();
-    audio.src = `https://code.s3.yandex.net/web-code/react/${fileName}`;
-    audio.play();
+    audio.src = `../../sounds/${filename}.mp3`;
+    const playPromise = audio.play();
+
+    if (playPromise !== undefined) {
+      playPromise
+        .then(() => {
+          console.log("audio played auto");
+        })
+        .catch((error) => {
+          console.log("playback prevented");
+        });
+    }
   };
 
   useEffect(() => {
     intervalRef.current = setInterval(decreaseNum, 1000);
 
     if (num < 1) {
-      playSound("gong.mp3");
+      playSound("ring");
       setIsActive(true);
       setModalVisibleState(true);
       clearInterval(intervalRef.current);
@@ -33,12 +43,17 @@ export const Timer = () => {
     <>
       <section className={"timer"}>
         <div className="timer__area">
-          <p className="timer__block">Таймер&nbsp;00:{num < 10 ? `0${num}` : num}</p>
+          <p className="timer__block">
+            Таймер&nbsp;00:{num < 10 ? `0${num}` : num}
+          </p>
         </div>
         <Link
-          className={`button button__navBar ${isInteractive === "none" ? "button_idle" : "button_active"}`}
+          className={`button button__navBar ${
+            isInteractive === "none" ? "button_idle" : "button_active"
+          }`}
           style={{ pointerEvents: isInteractive }}
-          to="/results">
+          to="/results"
+        >
           Подсчитать
         </Link>
         <PopupWithNote isOpen={modalVisibleState} isClosed={modalClose} />

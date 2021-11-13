@@ -1,6 +1,6 @@
 .navBar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   box-sizing: border-box;
   font-family: "IBM Plex Serif", serif, Arial;
   font-weight: 400;
