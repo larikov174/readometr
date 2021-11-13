@@ -1,20 +1,3 @@
 .button__navBar {
   margin: 0 10px 0 0;
-  align-self: end;
-  border: none;
-  background-color: transparent;
-  font-weight: 600;
-}
-
-.button__navBar:hover {
-  opacity: 0.7;
-  text-decoration: solid;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 325px) {
-  .button__navBar {
-    font-size: 12px;
-    text-align: center;
-  }
 }

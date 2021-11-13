@@ -10,14 +10,14 @@ export const Guide = () => {
         <li className="about__text">Укажите свое имя</li>
         <li className="about__text">Выбери подходящий уровень сложности</li>
         <li className="about__text">
-          По истечении одной минуты выдели слово где остановился(ась).
+          По истечении одной минуты выдели последнее прочитанное слово в тексте.
         </li>
         <li className="about__text">
-          Нажми на кнопку "Узнать результат" в меню наверху страницы.
+        Нажми на кнопку "Подсчитать" в меню наверху страницы.
         </li>
       </ul>
       <div className="guide__actions">
-      <Link className="button button__about" to="/">
+      <Link className="button button__about" to="/" >
         &#8592; На главную
       </Link>
       <button className="button button__guide" onClick={() => navigate(-1)}>

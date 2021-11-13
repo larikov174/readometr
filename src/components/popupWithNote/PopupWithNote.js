@@ -12,8 +12,8 @@ export const PopupWithNote = ({ isOpen, isClosed, children }) => {
             <h2 className="about__title">А сейчас:</h2>
             <ul className="guide__list">
               <li className="about__text">Нажми кнопку далее.</li>
-              <li className="about__text">Выдели слово в тексте, на котором остановлся(ась).</li>
-              <li className="about__text">Нажми на кнопку "Узнать результат" в меню наверху страницы.</li>
+              <li className="about__text">Выдели последнее прочитанное слово в тексте.</li>
+              <li className="about__text">Нажми на кнопку "Подсчитать" в меню наверху страницы.</li>
             </ul>
             <button className="button button__main" type="button" onClick={isClosed}>
               Далее...

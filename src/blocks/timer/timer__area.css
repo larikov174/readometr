@@ -1,14 +1,4 @@
 .timer__area {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
   max-width: 300px;
-  border: 1px solid gray;
-}
-
-@media screen and (max-width: 350px) {
-  .timer__area {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 }

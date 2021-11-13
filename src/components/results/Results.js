@@ -1,10 +1,9 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { countWords } from "../countWords/CountWords";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const Results = () => {
-  const navigate = useNavigate();
   const { text, index, user } = useSelector((state) => state.setData);
   const getTotal = countWords(index, text);
 
@@ -16,9 +15,6 @@ export const Results = () => {
         <Link className="button button__about" to="/">
           &#8592; На главную
         </Link>
-        <button className="button button__guide" onClick={() => navigate(-1)}>
-          Назад
-        </button>
       </div>
     </section>
   );

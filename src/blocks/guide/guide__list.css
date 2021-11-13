@@ -1,3 +1,10 @@
 .guide__list {
   list-style-type: decimal;
+  margin: 0;
+}
+
+@media screen and (max-width:450px){
+  .guide__list {
+    padding: 0 10px;
+  }
 }

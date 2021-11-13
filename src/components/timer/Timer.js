@@ -33,24 +33,16 @@ export const Timer = () => {
     <>
       <section className={"timer"}>
         <div className="timer__area">
-          <p className="timer__block">
-            таймер&nbsp;00:{num < 10 ? `0${num}` : num}
-          </p>
-          <Link className={"button button__navBar"} to="/">
-            Назад
-          </Link>
-          <Link
-            className={`button button__navBar ${
-              isInteractive === "none" ? "button__navBar_idle" : ""
-            }`}
-            style={{ pointerEvents: isInteractive }}
-            to="/results"
-          >
-            Подсчитать
-          </Link>
+          <p className="timer__block">Таймер&nbsp;00:{num < 10 ? `0${num}` : num}</p>
         </div>
+        <Link
+          className={`button button__navBar ${isInteractive === "none" ? "button_idle" : "button_active"}`}
+          style={{ pointerEvents: isInteractive }}
+          to="/results">
+          Подсчитать
+        </Link>
+        <PopupWithNote isOpen={modalVisibleState} isClosed={modalClose} />
       </section>
-      <PopupWithNote isOpen={modalVisibleState} isClosed={modalClose} />
     </>
   );
 };

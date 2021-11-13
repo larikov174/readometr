@@ -1,7 +1,6 @@
 .book__textArea {
   border: none;
   width: 100%;
-  /* min-height: 630px; */
   min-height: 60vh;
   line-height: 1.8;
   overflow: overlay;
@@ -10,4 +9,17 @@
   margin: 0;
   box-sizing: border-box;
   max-width: 1024px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .book__textArea {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .book__textArea {
+    font-size: 16px;
+  }
 }
