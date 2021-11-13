@@ -8,7 +8,7 @@ export const Main = () => {
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.setData);
   const [optionValue, setOptionValue] = useState("");
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState(user);
   const onOptionChanged = (e) => setOptionValue(e.target.value);
   const onInputChanged = (e) => setInputValue(e.target.value);
   const onButtonClicked = () => {
@@ -24,7 +24,7 @@ export const Main = () => {
           <label htmlFor="nameInput" className="main__text">
             Введите имя:
           </label>
-          <input type="text" id="nameInput" className="main__input" defaultValue={user} onChange={onInputChanged} maxLength="30"/>
+          <input type="text" id="nameInput" className="main__input" defaultValue={inputValue} onChange={onInputChanged} maxLength="30"/>
         </nav>
         <nav className="main__nav">
           <label htmlFor="selectLevel" className="main__text">
