@@ -1,6 +1,12 @@
 import React, { useState, useRef, useEffect } from "react";
-import { PopupWithNote } from "../popupWithNote/PopupWithNote";
 import { Link } from "react-router-dom";
+
+import { PopupWithNote } from "../popupWithNote/PopupWithNote";
+import ring from "../../sounds/ring.mp3";
+
+const sounds = {
+  ring
+};
 
 export const Timer = () => {
   const [num, setNum] = useState(59);
@@ -12,7 +18,7 @@ export const Timer = () => {
   const decreaseNum = () => setNum((prev) => prev - 1);
   const playSound = (filename) => {
     const audio = new Audio();
-    audio.src = `../../sounds/${filename}.mp3`;
+    audio.src = sounds[filename];
     const playPromise = audio.play();
 
     if (playPromise !== undefined) {
@@ -21,7 +27,7 @@ export const Timer = () => {
           console.log("audio played auto");
         })
         .catch((error) => {
-          console.log("playback prevented");
+          console.log(`playback prevented, reason: ${error}`);
         });
     }
   };
