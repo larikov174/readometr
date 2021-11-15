@@ -33,7 +33,7 @@ export const Main = () => {
           <select className="main__input" id="selectLevel" onChange={onOptionChanged}>
             <option value=""></option>
             <option key={0} value="beginner">
-              дети 7-13 лет
+              дети до 12 лет
             </option>
             <option key={1} value="advanced">
               остальные читатели
