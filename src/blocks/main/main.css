@@ -1,5 +1,4 @@
 .main {
-  /* width: 50%; */
   height: 50%;
   position: absolute;
   top: 0;
@@ -8,9 +7,10 @@
   right: 0;
   margin: auto;
   max-width: 1024px;
+  font-family: "IBM Plex Serif", serif, Arial;
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 550px) {
   .main {
     padding-top: 10px;
   }

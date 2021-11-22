@@ -20,9 +20,10 @@ export const Main = () => {
   return (
     <section className={"main"}>
       <div className="main__option">
+        <h1 className="main__title">Чтобы начать:</h1>
         <nav className="main__nav">
           <label htmlFor="nameInput" className="main__text">
-            Введите имя:
+            Введи имя:
           </label>
           <input type="text" id="nameInput" className="main__input" defaultValue={inputValue} onChange={onInputChanged} maxLength="30"/>
         </nav>
